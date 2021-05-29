@@ -3,7 +3,7 @@ import InteractiveLine from "../InteractiveLine/InteractiveLine"
 
 const Header = () => {
   
-  const text = ["I like travel", "I live in Poland", "I want to live in Japen"]
+  const text = ["I like travel ", "I live in Poland ", "I want to live in Japan "]
   return (
     <header className=" bg-white h-72 w-full">
       <div className="   flex justify-between  h-12 main-navbar">
