@@ -4,6 +4,19 @@ body {
 .brd{
   border: 1px solid red;
 }
+.brd1{
+  border: 1px solid blue;
+}
+.brd2{
+  border: 2px solid greenyellow;
+}
 .text-small{
   font-size: 0.75rem;
+}
+.card-size{
+ max-height: 400px;
+ width: 33%;
+}
+@media screen {
+  
 }

@@ -7,8 +7,8 @@ import Footer from './components/Footer/Footer'
 function App() {
   return (
 // section
-<div> 
-<Header/>  
+<div className=" h-auto w-full  "> 
+<Header/> 
 <Promotion/>
 <Footer/>
 </div>

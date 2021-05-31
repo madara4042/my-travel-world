@@ -29,7 +29,7 @@ const InteractiveLine = ({ arrayOfPromos, speed = 200 }) => {
     return () => clearTimeout(timer)
   }, [promo])
   return (
-    <h1 className="text-2xl md:text-7xl">
+    <h1 className="text-2xl mt-6 md:text-7xl">
       {promo}
       {cursor}
     </h1>
