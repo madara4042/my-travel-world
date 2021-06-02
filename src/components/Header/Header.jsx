@@ -10,7 +10,7 @@ const Header = () => {
         <div className="font-bold w-1/6 flex justify-start items-center ml-10 ">
           YP JUS
         </div>
-        <div className="  font-bold text-xs w-1/4 flex  justify-between items-center tracking-wider ">
+        <div className="  font-bold text-xs w-1/4 flex flex-wrap  justify-between items-center tracking-wider ">
           <a href="#">WELCOME</a>
           <a href="#">ABOUT</a>
           <a href="#">SHOWCASE</a>
