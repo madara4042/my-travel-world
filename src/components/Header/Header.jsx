@@ -1,13 +1,20 @@
 import instagram from "../../assets/icons/instagram.svg"
 import InteractiveLine from "../InteractiveLine/InteractiveLine"
+import Particles from 'react-particles-js'
+import configParticles from "./../../configs/configParticles" 
 
 const Header = () => {
   
   const text = ["I like travel ", "I live in Poland ", "I want to live in Japan "]
   return (
-    <header className="  bg-white  w-full">
+    
+    <header style={{height:"75vh"}} className=" relative bg-white  w-full">
+    { <Particles
+    {...configParticles} /> }
+    <div className=" absolute top-0 left-0 right-0 bottom-0">
+
       <div className="   flex justify-between  h-20 main-navbar">
-        <div className="font-bold w-1/6 flex justify-start items-center ml-10 ">
+        <div className="  font-bold w-1/6 flex justify-start items-center ml-10 ">
           YP JUS
         </div>
         <div className="  font-bold text-xs w-1/4 flex flex-wrap  justify-between items-center tracking-wider ">
@@ -27,6 +34,8 @@ const Header = () => {
        <InteractiveLine  arrayOfPromos={text} speed={150}/>
        <p className=" text-gray-400 mt-10 ">See and enjoy the beauty of other countries</p>
       </div>
+    
+    </div>
     </header>
   )
 }

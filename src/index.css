@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
 }
@@ -8,7 +9,7 @@ body {
   border: 1px solid blue;
 }
 .brd2 {
-  border: 2px solid greenyellow;
+  border: 5px solid greenyellow;
 }
 .text-small {
   font-size: 0.75rem;
@@ -26,6 +27,7 @@ body {
   background: rgba(0,0,00,0);
   z-index: 10;
 }
+
 
 @media only screen and (max-width: 1024px) {
   .card-size {
