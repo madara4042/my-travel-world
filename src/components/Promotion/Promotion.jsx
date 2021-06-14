@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import PortfolioItem from "../PortfolioItem/PortfolioItem"
 
 const Promotion = () => {
   const [portfolioFilter, setPortfolioFilter] = useState('all')
@@ -11,26 +12,14 @@ const Promotion = () => {
     { src: '/my-travel-world/assets/img/germany.jpg', name: 'germany' },
     { src: '/my-travel-world/assets/img/hawai.jpg', name: 'hawai' },
     { src: '/my-travel-world/assets/img/italia.jpg', name: 'italia' },
-    { src: '/my-travel-world/assets/img/new zealand.jpg', name: 'new zealand' },
+    { src: '/my-travel-world/assets/img/newzealand.jpg', name: 'new zealand' },
     { src: '/my-travel-world/assets/img/texas.jpg', name: 'texas' },
   ]
 
   const countriesElements = countries
     .filter((el) => el.name === portfolioFilter || portfolioFilter === 'all')
     .map((el) => (
-      <div className=" p-3.5 card-size relative">
-        <div className="filter-img "></div>
-        <img
-          style={{
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-          }}
-          src={el.src}
-          alt={el.name}
-          key={el.name}
-        />
-      </div>
+     <PortfolioItem src={el.src}/>
     ))
 
   let galleryNav = countries.map((el) => el.name)
@@ -47,12 +36,11 @@ const Promotion = () => {
   ))
 
   const imgHandler = (e) => {
-    const categoryNav =e.target.getAttribute('data-country') ?? "all"
+    const categoryNav = e.target.getAttribute('data-country') ?? 'all'
     setPortfolioFilter(categoryNav)
   }
 
   return (
-    
     <div className="py-1 w-full">
       {/* gallery-navigation-box */}
       <div
@@ -69,7 +57,7 @@ const Promotion = () => {
       </div>
 
       {/* gallery-countries-box */}
-      <div className="brd flex  flex-wrap mt-4 justify-center p-3  bg-black">
+      <div className="flex  flex-wrap mt-4 justify-center p-3  bg-black">
         {countriesElements}
       </div>
     </div>

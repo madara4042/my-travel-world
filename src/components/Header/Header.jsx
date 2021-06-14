@@ -8,7 +8,7 @@ const Header = () => {
   const text = ["I like travel ", "I live in Poland ", "I want to live in Japan "]
   return (
     
-    <header style={{height:"75vh"}} className=" relative bg-white  w-full">
+    <header style={{height:"auto"}} className="  relative bg-white  w-full">
     { <Particles
     {...configParticles} /> }
     <div className=" absolute top-0 left-0 right-0 bottom-0">
