@@ -41,7 +41,7 @@ const Promotion = () => {
   }
 
   return (
-    <div className="py-1 w-full">
+    <div className=" brd1 py-1 w-full">
       {/* gallery-navigation-box */}
       <div
         onClick={imgHandler}
